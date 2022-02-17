@@ -1,0 +1,12 @@
+{
+  "name": "clicksorter",
+  "version": "1.0.0",
+  "description": "test project to sort clicks",
+  "main": "run.js",
+  "scripts": {
+    "solution": "node run.js",
+    "test": "node test.js"
+  },
+  "author": "Falk Schwiefert",
+  "license": "ISC"
+}
