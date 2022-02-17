@@ -1,7 +1,4 @@
 const FileSystem = require("fs");
-const jsonData = require("./clicks.json");
-
-const clicks = JSON.parse(jsonData);
 
 const mapClicks = (clicksArr) => {
   const IPcounter = {};
@@ -26,12 +23,6 @@ const mapClicks = (clicksArr) => {
       state.set(key, elem);
       return state;
     }
-    // } else if (
-    //   last.amount === elem.amount &&
-    //   new Date(elem.timestamp) < new Date(last.timestamp)
-    // ) {
-    //   state.set(key, elem);
-    // }
     return state;
   }, new Map());
   return { IPcounter, map };

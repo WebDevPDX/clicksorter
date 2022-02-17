@@ -1,5 +1,5 @@
 const assert = require("assert");
-const { mapClicks, filterArr, createSolutionFile } = require("./solution.js");
+const { mapClicks, filterArr, createSolutionFile } = require("./sorter.js");
 
 const it = async (desc, fn) => {
   try {
@@ -151,7 +151,7 @@ it("should correctly return the results even if same IP clicks are separated", (
   assert.equal(result, expected);
 });
 
-//more of an integration test since it was a requirement of the assignment (should not be unit tested - external dependency)
+//more of an integration test since it was a requirement of the assignment (should not be unit tested)
 it("should write the results in the resultset.json file in the correct format", async () => {
   const input = [
     { ip: "99.11.11.11", timestamp: "3/11/2020 02:12:32", amount: 7.25 },
